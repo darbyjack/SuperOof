@@ -1,0 +1,5 @@
+name: SuperOof
+version: ${project.version}
+main: me.glaremasters.superoof.SuperOof
+authors: [blockslayer22]
+description: SuperOof
