@@ -10,7 +10,9 @@ public final class SuperOof extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
 
-        getServer().getPluginManager().registerEvents(new Chat(), this);
+        saveDefaultConfig();
+
+        getServer().getPluginManager().registerEvents(new Chat(this), this);
         SpigotUpdater updater = new SpigotUpdater(this, 58916);
         updateCheck(updater);
 
