@@ -8,8 +8,6 @@ public final class SuperOof extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
         saveDefaultConfig();
 
         getServer().getPluginManager().registerEvents(new Chat(this), this);
