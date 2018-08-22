@@ -14,11 +14,9 @@ import java.util.List;
  */
 public class Chat implements Listener {
 
-    private SuperOof oof;
     private List<String> commands;
 
     public Chat(SuperOof oof) {
-        this.oof = oof;
         this.commands = oof.getConfig().getStringList("commands");
     }
 
