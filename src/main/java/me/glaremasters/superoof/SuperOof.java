@@ -31,7 +31,7 @@ public final class SuperOof extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        getLogger().info("Moderately-large oof! The plugin seems to be oofing itself :(");
     }
 
     private void updateCheck(SpigotUpdater updater) {
