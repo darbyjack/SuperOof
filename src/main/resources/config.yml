@@ -4,3 +4,6 @@
 # This supports the {player} placeholder
 commands:
 - ""
+
+messages:
+  reload: "Config reloaded"
