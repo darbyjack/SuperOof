@@ -3,7 +3,3 @@ version: ${project.version}
 main: me.glaremasters.superoof.SuperOof
 authors: [blockslayer22]
 description: SuperOof
-
-commands:
-  so:
-    description: Main help menu

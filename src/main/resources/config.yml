@@ -2,12 +2,5 @@
 
 # Any commands in the list below will be ran as CONSOLE
 # This supports the {player} placeholder
-
-description:
-  help: "Shows the help menu"
-
-messages:
-  help-message: "&c/so {command} {arguments} &7- {description}"
-
 commands:
 - ""
