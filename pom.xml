@@ -6,7 +6,7 @@
 
   <groupId>me.glaremasters</groupId>
   <artifactId>SuperOof</artifactId>
-  <version>1.0.7-RELEASE</version>
+  <version>1.0.8-RELEASE</version>
   <packaging>jar</packaging>
 
   <name>SuperOof</name>
@@ -43,6 +43,12 @@
             </goals>
             <configuration>
               <minimizeJar>true</minimizeJar>
+              <relocations>
+                <relocation>
+                  <pattern>co.aikar.commands</pattern>
+                  <shadedPattern>me.glaremasters.superoof.libs.acf</shadedPattern>
+                </relocation>
+              </relocations>
             </configuration>
           </execution>
         </executions>
@@ -57,21 +63,10 @@
   </build>
 
   <repositories>
+    <!-- Platform -->
     <repository>
-      <id>spigotmc-repo</id>
-      <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
-    </repository>
-    <repository>
-      <id>sonatype</id>
-      <url>https://oss.sonatype.org/content/groups/public/</url>
-    </repository>
-    <repository>
-      <id>Aikari</id>
-      <url>http://ci.emc.gs/nexus/content/groups/aikar/</url>
-    </repository>
-    <repository>
-      <id>aikar</id>
-      <url>https://repo.aikar.co/content/groups/aikar/</url>
+      <id>repo</id>
+      <url>https://repo.glaremasters.me/repository/public/</url>
     </repository>
   </repositories>
 
@@ -84,7 +79,7 @@
     </dependency>
     <dependency>
       <groupId>co.aikar</groupId>
-      <artifactId>acf-bukkit</artifactId>
+      <artifactId>acf-paper</artifactId>
       <version>0.5.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
