@@ -6,7 +6,7 @@
 
   <groupId>me.glaremasters</groupId>
   <artifactId>SuperOof</artifactId>
-  <version>1.0.8-RELEASE</version>
+  <version>1.1.0-RELEASE</version>
   <packaging>jar</packaging>
 
   <name>SuperOof</name>
@@ -74,7 +74,7 @@
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
-      <version>1.13-R0.1-SNAPSHOT</version>
+      <version>1.15-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
