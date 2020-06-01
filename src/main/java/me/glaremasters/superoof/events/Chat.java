@@ -23,7 +23,7 @@ public class Chat implements Listener {
 
     @EventHandler
     public void onChat(PlayerChatEvent event) {
-        if (!event.getPlayer().hasPermission("superoof.off")) return;
+        if (!event.getPlayer().hasPermission("superoof.oof")) return;
         if (!event.getMessage().toLowerCase().contains("oof")) return;
         event.getRecipients().forEach(p -> p.getWorld().strikeLightningEffect(p.getLocation()));
         commands.forEach(cmd -> Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), cmd.replaceAll("\\{player}", event.getPlayer().getName())));
