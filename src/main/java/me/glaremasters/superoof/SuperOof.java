@@ -23,11 +23,6 @@ public final class SuperOof extends JavaPlugin {
 
     }
 
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
-
     private void updateCheck(SpigotUpdater updater) {
         try {
             if (updater.checkForUpdates()) {
